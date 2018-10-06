@@ -1,16 +1,13 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { createStackNavigator } from "react-navigation";
+import { createBottomTabNavigator } from "react-navigation";
 import Home from "./Home";
 import Profile from "./Profile";
+import Settings from "./Settings";
 
-const RootStack = createStackNavigator({
-  Home: {
-    screen: Home
-  },
-  Profile: {
-    screen: Profile
-  }
+const RootStack = createBottomTabNavigator({
+  Home: Home,
+  Profile: Profile,
+  Settings: Settings
 });
 
 export default class App extends React.Component {

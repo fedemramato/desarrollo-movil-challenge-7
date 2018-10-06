@@ -1,18 +1,18 @@
 import React from "react";
-import { View, StyleSheet, Text, Button } from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
 
-export default class Profile extends React.Component {
+export default class Settings extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Your Profile</Text>
+        <Text>Settings</Text>
         <Button
           title="Go to Home"
           onPress={() => this.props.navigation.navigate("Home")}
         />
         <Button
-          title="Go to Settings"
-          onPress={() => this.props.navigation.navigate("Settings")}
+          title="Go to Profile"
+          onPress={() => this.props.navigation.navigate("Profile")}
         />
       </View>
     );

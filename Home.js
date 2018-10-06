@@ -10,6 +10,10 @@ export default class Home extends React.Component {
           title="Go to Profile"
           onPress={() => this.props.navigation.navigate("Profile")}
         />
+        <Button
+          title="Go to Settings"
+          onPress={() => this.props.navigation.navigate("Settings")}
+        />
       </View>
     );
   }
